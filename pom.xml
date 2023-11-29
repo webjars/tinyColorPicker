@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>tinyColorPicker</artifactId>
-    <version>1.1.1-SNAPSHOT</version>
+    <version>1.1.1</version>
     <name>tinyColorPicker</name>
     <description>WebJar for tinyColorPicker</description>
     <url>http://webjars.org</url>
@@ -51,7 +51,7 @@
         <url>http://github.com/webjars/tinyColorPicker</url>
         <connection>scm:git:https://github.com/webjars/tinyColorPicker.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/tinyColorPicker.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>tinyColorPicker-1.1.1</tag>
     </scm>
     
     <dependencies>
@@ -88,11 +88,11 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <mkdir dir="${destDir}"/>
-                                <get src="${upstream.url}/jqColorPicker.js" dest="${destDir}"/>
-                                <get src="${upstream.url}/jqColorPicker.js.map" dest="${destDir}"/>
-                                <get src="${upstream.url}/jqColorPicker.min.js" dest="${destDir}"/>
-                                <get src="${upstream.url}/colors.js" dest="${destDir}"/>
+                                <mkdir dir="${destDir}" />
+                                <get src="${upstream.url}/jqColorPicker.js" dest="${destDir}" />
+                                <get src="${upstream.url}/jqColorPicker.js.map" dest="${destDir}" />
+                                <get src="${upstream.url}/jqColorPicker.min.js" dest="${destDir}" />
+                                <get src="${upstream.url}/colors.js" dest="${destDir}" />
                             </target>
                         </configuration>
                     </execution>
